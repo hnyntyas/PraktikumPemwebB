@@ -1,0 +1,180 @@
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git init Project-01
+Initialized empty Git repository in D:/Semester 4/RPL/Praktikum/03/Project-01/.git/
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git config --global user.name "Henny Nurcahyaning Tyas"
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git config --global user.email "hennynurcahyaningtyas@gmail.com"
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git clone https://gitlab.com/hennynurcahyaning/rpl_03.git
+Cloning into 'rpl_03'...
+warning: You appear to have cloned an empty repository.
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ cd rpl_03
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03/rpl_03 (master)
+$ touch index.txt
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03/rpl_03 (master)
+$ vim index.txx
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03/rpl_03 (master)
+$ vim index.txt
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03/rpl_03 (master)
+$ git checkout index.txt
+error: pathspec 'index.txt' did not match any file(s) known to git
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03/rpl_03 (master)
+$ cd ..
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git clone https://github.com/hnyntyas/Praktikum_03.git
+Cloning into 'Praktikum_03'...
+fatal: unable to access 'https://github.com/hnyntyas/Praktikum_03.git/': Could not resolve host: github.com
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git clone https://github.com/hnyntyas/Praktikum_03.git
+Cloning into 'Praktikum_03'...
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': hnytyas
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/hnyntyas/Praktikum_03.git/'
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ echo "# Praktikum_03" >> README.md
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git init
+Initialized empty Git repository in D:/Semester 4/RPL/Praktikum/03/.git/
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git init README.md
+fatal: cannot mkdir README.md: File exists
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Project-02/
+
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git commit -m "first commit"
+[master (root-commit) 1a6f307] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git remote add origin https://github.com/hnyntyas/Praktikum_03.git
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': hnytyas
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/hnyntyas/Praktikum_03.git/'
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': hnytyas72@gmail.com
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 241 bytes | 60.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hnyntyas/Praktikum_03.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Project-02/
+        test.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git add test.html
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git commit -m "rpl1"
+[master 4e12974] rpl1
+ 1 file changed, 10 insertions(+)
+ create mode 100644 test.html
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 419 bytes | 139.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hnyntyas/Praktikum_03.git
+   1a6f307..4e12974  master -> master
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Project-02/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$ git diff
+diff --git a/test.html b/test.html
+index da88224..b7ea0e5 100644
+--- a/test.html
++++ b/test.html
+@@ -5,6 +5,7 @@
+ <title>Belajar Git - Project 01</title>
+ </head>
+ <body>
+-<p>Hello Dunia!, Saya sedang belajar Git</p>
++<p>delete text</p>
++<p>Text Baru<p>
+ </body>
+ </html>
+\ No newline at end of file
+
+acer@DESKTOP-H4QDBFJ MINGW64 /d/Semester 4/RPL/Praktikum/03 (master)
+$
